@@ -1,0 +1,38 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(164,0,167,1) 40%, rgba(255,0,241,1) 100%);
+    
+}
+
+
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    color:beige;
+    background-color: purple;
+}
+
+.jumbo-color {
+    
+    background-color: purple;
+}
+
+#headernav{
+    background-color: purple;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: purple;
+}
+
+.form-control{
+    background-color: none;
+}

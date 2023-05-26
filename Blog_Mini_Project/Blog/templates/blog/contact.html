@@ -1,0 +1,92 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    body {
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(164,0,167,1) 40%, rgba(255,0,241,1) 100%);
+}
+
+
+button{
+    color: antiquewhite;
+    background-color: palevioletred;
+    border-color: blueviolet;
+    border-radius: 1px;
+}
+#headernav{
+    background-color: purple;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: purple;
+}
+</style>
+<div class="col-sm-10 text-white">
+    
+    <form class="row g-3 ">
+        <h1 class="text-white">Contact me!!!</h1>
+       
+        <div class="col-md-6">
+            <label for="inputfname" class="form-label">FirstName</label>
+            <input type="text" class="form-control" id="inputname">
+          </div>
+          <div class="col-md-6">
+            <label for="inputlname" class="form-label">LirstName</label>
+            <input type="text" class="form-control" id="inputname">
+          </div>
+          
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option value="1">Mumbai</option>
+            <option value="2">Dheli</option>
+            <option value="3">Ahamdabad</option>
+            <option value="4">london</option>
+          </select>
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Massage</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+        
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12 text-center" >
+          <input type="submit" value="send" class="btn btn-primary mt-3 text-center">
+        </div>
+      </form>   
+</div>
+{% endblock content %}
